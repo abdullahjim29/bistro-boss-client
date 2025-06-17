@@ -21,7 +21,8 @@ const NavBar = () => {
     </>
   );
   return (
-    <div className="container mx-auto navbar fixed z-10 bg-[#1a181846] text-white">
+    <div className="">
+      <div className="navbar fixed z-10 bg-[#1a181846] text-white">
       <div className="navbar-start">
         {/* for small device */}
         <div className="dropdown">
@@ -64,6 +65,7 @@ const NavBar = () => {
         </div>
         <a className="btn">Button</a>
       </div>
+    </div>
     </div>
   );
 };
