@@ -32,3 +32,7 @@ body {
 li .active{
   color: #EEFF25;
 }
+
+.img-shape{
+  border-radius: 0px 200px 200px 200px;
+}

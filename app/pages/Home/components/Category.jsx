@@ -19,7 +19,7 @@ import feturedImg5 from "../../../../public/assets/home/slide5.jpg";
 
 const Category = () => {
   return (
-    <div className="my-20 max-w-5xl mx-auto">
+    <div className="my-20 w-11/12 md:max-w-5xl mx-auto">
       <SectionTitle
         subHeading={"---From 11:00am to 10:00pm---"}
         heading={"ORDER ONLINE"}
