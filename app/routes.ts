@@ -6,7 +6,7 @@ export default [
         route("/contact-us", "./pages/ContactUs/ContactUs.jsx"),
         route("/dashboard", "./pages/Dashboard/Dashboard.jsx"),
         route("/our-menu", "./pages/Our Menu/OurMenu.jsx"),
-        route("/our-shop", "./pages/Our Shop/OurShop.jsx"),
+        route("/our-food", "./pages/Our Food/OurFood.jsx"),
     ]),
 
 ] satisfies RouteConfig;
