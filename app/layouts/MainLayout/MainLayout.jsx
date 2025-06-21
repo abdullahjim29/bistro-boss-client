@@ -4,12 +4,14 @@ import NavBar from "../Shared/NavBar/NavBar";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       {/* navbar */}
       <NavBar />
 
-      {/* outlet */}
-      <Outlet />
+      <main className="flex-grow">
+        {/* outlet */}
+        <Outlet />
+      </main>
 
       {/* footer */}
       <Footer />

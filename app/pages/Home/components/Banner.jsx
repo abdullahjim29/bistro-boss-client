@@ -9,6 +9,7 @@ import bannerImg5 from "../../../../public/assets/home/05.png"
 import bannerImg6 from "../../../../public/assets/home/06.png"
 
 const Banner = () => {
+  const arr = [58, 53, 20]
   return (
     <div className="mb-20">
       <Carousel
