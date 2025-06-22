@@ -1,15 +1,10 @@
 import Cover from "../../components/Shared/Cover";
 import ourFoodBannerImg from "../../../public/assets/shop/banner2.jpg";
 import { Link, Outlet, useLocation } from "react-router";
-import { useEffect, useState } from "react";
+import useMenu from "../../hooks/useMenu";
 
 const OurFood = () => {
-  const [menues, setMenues] = useState([]);
-  useEffect(() => {
-    fetch("/menues.json")
-      .then((res) => res.json())
-      .then((data) => setMenues(data));
-  }, []);
+  const menues = useMenu() || [];
 
   const menuCategories = menues
     .map((menuCategory) => menuCategory.category)
@@ -24,7 +19,7 @@ const OurFood = () => {
 
   const { pathname } = useLocation();
   return (
-    <div>
+    <div >
       <Cover
         img={ourFoodBannerImg}
         title={"OUR FOOD"}
@@ -47,7 +42,7 @@ const OurFood = () => {
             </Link>
           ))}
         </div>
-        <div className="">
+        <div>
           <Outlet />
         </div>
       </div>

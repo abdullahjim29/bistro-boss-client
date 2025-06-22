@@ -29,7 +29,7 @@ const menuuCard = ({ menues, img, title, description, buttonText }) => {
         ))}
       </div>
       <div className="flex flex-col items-center mt-5">
-        <Link>
+        <Link to={`/our-food/${title}`}>
           <button className="border-b-2 rounded-lg py-2 border-[1f2937] px-4 text-[#1F2937] uppercase hover:bg-[#BB8506] hover:text-white">
             {buttonText}
           </button>
